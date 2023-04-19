@@ -42,3 +42,32 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2 (1990)
 console.log (age1, age2); 
+
+
+    // ARROW FUNCTION 
+
+const calcAge3 = (birthYear) => 2037 - birthYear;
+const age3 = calcAge3(1990);
+console.log (age3);
+
+    // writing two or more function in the arrow function 
+// const yearsBeforeRetirement = birthYear => {
+//     const age = 2037 - birthYear;
+//     const retirement = 65 - age;
+//     return retirement;
+// }
+
+// const realAge = yearsBeforeRetirement (1992);
+// console.log (realAge);
+
+
+const yearsBeforeRetirement = (birthYear, firstName) => 
+{
+    const age = 2037 - birthYear; 
+    const retirement = 65 - age;
+    return `${firstName}'s remaining years to retire is ${retirement} years`;
+}
+
+const realAge = yearsBeforeRetirement (1996, 'Dave');
+console.log (realAge);
+
