@@ -27,6 +27,7 @@
 // console.log (genenralKnowledge2);
 
 
+////////////////////////////////////////////
     // FUNCTION DECLARATION / EXPRESSION
 
     // FUNCTION DECLARATION 
@@ -51,6 +52,7 @@
 // console.log (populationFrance);
 
 
+///////////////////////////////////////
     // FUNCTION EXPRESSION 
 
 // const percentageOfWorld2 = function (country, population){
@@ -69,20 +71,34 @@
 // console.log (populationChina);
 
 
+/////////////////////////////////
     // ARROW FUNCTION
 
-const percentageOfWorld3 = (country, population) => {
-   const percentage = (population / 7900) * 100;
-   return `${country} has ${population} million people, so it's about ${percentage}% of the world population.`;
-} 
+// const percentageOfWorld3 = (country, population) => {
+//    const percentage = (population / 7900) * 100;
+//    return `${country} has ${population} million people, so it's about ${percentage}% of the world population.`;
+// } 
 
-const populationIreland1 = percentageOfWorld3 
-('Ireland', 50);
-const populationJapan1 = percentageOfWorld3 
-('Japan', 150);
-const populationChina1 = percentageOfWorld3 
-('China',600);
+// const populationIreland1 = percentageOfWorld3 
+// ('Ireland', 50);
+// const populationJapan1 = percentageOfWorld3 
+// ('Japan', 150);
+// const populationChina1 = percentageOfWorld3 
+// ('China',600);
 
-console.log (populationIreland1);
-console.log (populationJapan1);
-console.log (populationChina1);
+// console.log (populationIreland1);
+// console.log (populationJapan1);
+// console.log (populationChina1);
+
+
+//////////////////////////////////////
+    // FUNCTIONS CALLING OTHER FUNCTIONS 
+
+//     const percentageOfWorld1 = function (population){
+//     return (population / 7900) * 100; 
+// }
+// const describePopulation = function (country, population) {
+//     const percentage = percentageOfWorld1(population);
+//     return `${country} has ${population} million people, which is about ${percentage}% of the world.`;
+// }
+// console.log (describePopulation('Nigeria', 200));
