@@ -53,7 +53,7 @@
 // console.log (age3);
 
     // writing two or more function in the arrow function 
-// const yearsBeforeRetirement = birthYear => {
+// const yearsBefore3 = birthYear => {
 //     const age = 2037 - birthYear;
 //     const retirement = 65 - age;
 //     return retirement;
@@ -89,19 +89,56 @@
 
 // console.log (fruitProcessor (3,5));
 
-const calcAge = function (year){
-    return 2037 - year
-}
+// const calcAge = function (year){
+//     return 2037 - year
+// }
 
-const yearsBeforeRetirement = function (birthYear) {
-    const age = calcAge(birthYear);
-    const retirement = 65 - age;
+// const yearsBeforeRetirement = function (birthYear) {
+//     const age = calcAge(birthYear);
+//     const retirement = 65 - age;
 
-    if (retirement > 0) {
-        return retirement;
+//     if (retirement > 0) {
+//         return retirement;
+//     } else {
+//         return -1;
+//     }
+// }
+
+// console.log (yearsBeforeRetirement(1982));
+
+
+const calcAverage1 = (a,b,c) => (a + b + c) / 3;
+
+const scoreDolphins1 = calcAverage1 (44,23,71);
+const scoreKoalas1 = calcAverage1 (65, 54, 49);
+console.log (scoreDolphins1, scoreKoalas1);
+
+const checkWinner1 = function (avgDolphin1, avgKoalas1) {
+    if (scoreDolphins1 >= (2* scoreKoalas1)) {
+        console.log (`Dolphins win 🏆 (${scoreDolphins1} vs ${scoreKoalas1})`);
+    } else if (scoreKoalas1 >= (2 * scoreDolphins1)) {
+        console.log (`Koalas win 🏆 (${scoreKoalas1} vs ${scoreDolphins1})`)
     } else {
-        return -1;
+        console.log (`The game is a tie...`)
     }
 }
 
-console.log (yearsBeforeRetirement(1982));
+checkWinner1 (scoreDolphins1, scoreKoalas1);
+
+
+    // Test 2
+    const scoreDolphins2 = calcAverage1 (195,54,41);
+    const scoreKoalas2 = calcAverage1 (23, 34, 27);
+    console.log (scoreDolphins2, scoreKoalas2);
+
+    const checkWinner2 = function (avgDolphin2, avgKoalas2) {
+        if (scoreDolphins2 >= (2* scoreKoalas2)) {
+            console.log (`Dolphins win 🏆 (${scoreDolphins2} vs ${scoreKoalas2})`);
+        } else if (scoreKoalas2 >= (2 * scoreDolphins2)) {
+            console.log (`Koalas win 🏆 (${scoreKoalas2} vs ${scoreDolphins2})`)
+        } else {
+            console.log (`The game is a tie...`)
+        }
+    }
+
+    checkWinner2 (scoreDolphins2, scoreKoalas2)
