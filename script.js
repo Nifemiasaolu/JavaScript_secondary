@@ -148,27 +148,37 @@
     ////////////////////////
         // ARRAYS
 
-const friend1 = 'Michael';
-const friend2 = 'Steven';
-const friend3 = 'Peter';
+// const friend1 = 'Michael';
+// const friend2 = 'Steven';
+// const friend3 = 'Peter';
 
-const friends = ['Michael', 'Steven', 'Peter'];
-console.log (friends);
-const years = new Array(1991, 1989, 1954, 1972);
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log (friends);
+// const years = new Array(1991, 1989, 1954, 1972);
 
-console.log(friends[0]);
-console.log(friends[2]);
+// console.log(friends[0]);
+// console.log(friends[2]);
 
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
 
-friends[2] = 'Jay';
-console.log(friends); 
+// friends[2] = 'Jay';
+// console.log(friends); 
 
-const firstName = 'Jonas';
-const jonas = [firstName, 'Schmedtman', 2037-1991, 'teacher', friends];
-console.log (jonas);
+// const firstName = 'Jonas';
+// const jonas = [firstName, 'Schmedtman', 2037-1991, 'teacher', friends];
+// console.log (jonas);
 
-// Exercise
+// // Exercise
 
-const 
+// const 
+
+const slice = function (juice) {
+    return juice * 3;`
+}
+
+console.log(jui)
+
+const calcAge = function (year){
+    return 2037 - year
+}
