@@ -220,12 +220,12 @@
 // console.log (friends.indexOf('Bob')); // it gives a result of '-1' if the element is not present inside the array.
 
 
-// // Includes Method 
-// friends.push(23);
-// console.log(friends.includes('Steven'));
-// console.log(friends.includes('Bob'));
-// console.log(friends.includes(23));
+// Includes Method 
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
 
-// if (friends.includes('Steven')){
-//     console.log (`You have a friend called Peter`)
-// }
+if (friends.includes('Steven')){
+    console.log (`You have a friend called Peter`)
+}
