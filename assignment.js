@@ -139,16 +139,16 @@
 
 /////////////// ARRAYS 
 
-// const population = [200, 40, 65,72];
-// console.log (population.length);
+const population = [200, 40, 65,72];
+console.log (population.length);
 
 
 
-// const percentageOfWorld1 = function (population){
-//         return (population / 7900) * 100; 
-//     }
+const percentageOfWorld1 = function (population){
+        return (population / 7900) * 100; 
+    }
 
-// const percentage = (percentageOfWorld1 (200));
-// console.log (percentage);
+const percentage = (percentageOfWorld1 (200));
+console.log (percentage);
 
 
