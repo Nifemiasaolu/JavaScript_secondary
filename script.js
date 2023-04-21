@@ -169,16 +169,63 @@
 // const jonas = [firstName, 'Schmedtman', 2037-1991, 'teacher', friends];
 // console.log (jonas);
 
-// // Exercise
+// Exercise
+// const calcAge = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+// const years = [1990, 1967, 2002, 2010, 2018];
 
-// const 
+// const age1 = calcAge(years[0]);
+// const ages1 = calcAge(years[1]);
+// const ages2 = calcAge(years[years.length - 1]);
 
-const slice = function (juice) {
-    return juice * 3;`
-}
+// console.log (age1, ages1, ages2);
 
-console.log(jui)
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])]
+// console.log (ages);
 
-const calcAge = function (year){
-    return 2037 - year
-}
+
+//////////////////
+// BASIC ARRAY METHODS
+
+// const friends = ['Michael', 'Steven', 'Peter'];
+
+///// Add element 
+
+// Push Method 
+// const newLength = friends.push('Jay');
+// console.log (friends); 
+// console.log(newLength);
+
+// // Unshift Method 
+// friends.unshift('John');
+// console.log(friends);
+
+
+///// Remove element 
+
+// Pop Method 
+// friends.pop(); //Removes the Last element on the array
+// const popped = friends.pop();
+// console.log (popped);
+// console.log(friends);
+
+// friends.shift(); //Removes the FIRST element on the array.
+// console.log(friends);
+
+
+// IndexOf Method 
+// console.log (friends.indexOf('Steven')); //It tells the position of the element in the array.
+
+// console.log (friends.indexOf('Bob')); // it gives a result of '-1' if the element is not present inside the array.
+
+
+// // Includes Method 
+// friends.push(23);
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob'));
+// console.log(friends.includes(23));
+
+// if (friends.includes('Steven')){
+//     console.log (`You have a friend called Peter`)
+// }
