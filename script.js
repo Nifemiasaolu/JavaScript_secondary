@@ -231,8 +231,8 @@ console.log(friends.includes(23));
 
 // Check
 
-if (friends.includes('bob')){
-    console.log (`You have a friend called Steven`)
-}  else {
-    console.log (`The names aren't included.`)
-}
+// if (friends.includes('bob')){
+//     console.log (`You have a friend called Steven`)
+// }  else {
+//     console.log (`The names aren't included.`)
+// }
