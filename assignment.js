@@ -139,34 +139,34 @@
 
 /////////////// ARRAYS 
 
-const population = [200, 40, 65,72];
-console.log (population.length);
+// const population = [200, 40, 65,72];
+// console.log (population.length);
 
-const percentageOfWorld1 = function (population){
-        return (population / 7900) * 100; 
-    }
+// const percentageOfWorld1 = function (population){
+//         return (population / 7900) * 100; 
+//     }
 
-const percentage = (percentageOfWorld1 (200));
-console.log (percentage);
+// const percentage = (percentageOfWorld1 (200));
+// console.log (percentage);
 
-    // BASIC ARRAY OPERATORS ASSIGNMENT
+//     // BASIC ARRAY OPERATORS ASSIGNMENT
 
-const neighbour = ['Ghana', 'Cameroun', 'Togo', 'Niger', 'South Africa'];
+// const neighbour = ['Ghana', 'Cameroun', 'Togo', 'Niger', 'South Africa'];
 
-neighbour.push('Utopia');
-console.log (neighbour);
-neighbour.pop();
-console.log (neighbour);
+// neighbour.push('Utopia');
+// console.log (neighbour);
+// neighbour.pop();
+// console.log (neighbour);
 
-if (neighbour.includes('Germany')){
-    console.log (`Country is included in the array`)
-} else {
-    console.log (`Probably not an African country`)
-}
+// if (neighbour.includes('Germany')){
+//     console.log (`Country is included in the array`)
+// } else {
+//     console.log (`Probably not an African country`)
+// }
 
-neighbour[neighbour.indexOf('Togo')] = 'Republic of Togo';
-console.log (neighbour);
-console.log (neighbour.length);
+// neighbour[neighbour.indexOf('Togo')] = 'Republic of Togo';
+// console.log (neighbour);
+// console.log (neighbour.length);
 
 
     // CODE CHALLENGE #2
@@ -175,13 +175,13 @@ console.log (neighbour.length);
 // const bill = 100;
 
 
-const calcTip = function (bill) {
-   return (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
-} 
+// const calcTip = function (bill) {
+//    return (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
+// } 
     
-const bills = [125, 555, 44];
+// const bills = [125, 555, 44];
 
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 
-const totals = [bills[0] + tips[0],bills[1] + tips[1], bills[2] + tips[2]];
-console.log(bills, tips, totals);
+// const totals = [bills[0] + tips[0],bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(bills, tips, totals);
