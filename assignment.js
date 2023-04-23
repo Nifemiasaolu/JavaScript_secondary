@@ -142,8 +142,6 @@
 const population = [200, 40, 65,72];
 console.log (population.length);
 
-
-
 const percentageOfWorld1 = function (population){
         return (population / 7900) * 100; 
     }
@@ -151,4 +149,21 @@ const percentageOfWorld1 = function (population){
 const percentage = (percentageOfWorld1 (200));
 console.log (percentage);
 
+    // BASIC ARRAY OPERATORS ASSIGNMENT
 
+const neighbour = ['Ghana', 'Cameroun', 'Togo', 'Niger', 'South Africa'];
+
+neighbour.push('Utopia');
+console.log (neighbour);
+neighbour.pop();
+console.log (neighbour);
+
+if (neighbour.includes('Germany')){
+    console.log (`Country is included in the array`)
+} else {
+    console.log (`Probably not an African country`)
+}
+
+// neighbour.indexOf('Ghana');
+console.log(neighbour.indexOf('Togo'));
+console.log (neighbour.indexOf[2]);
