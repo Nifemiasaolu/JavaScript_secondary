@@ -221,12 +221,12 @@ const friends = ['Michael', 'Steven', 'Peter'];
 
 
 // Includes Method - It tells whether a condition is true or false, hence being used in If/Else statement.
-friends.push(23);
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob')); 
-// If an element is not present in an array list, the 'includes' function results it as '-1'.
+// friends.push(23);
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob')); 
+// // If an element is not present in an array list, the 'includes' function results it as '-1'.
 
-console.log(friends.includes(23));
+// console.log(friends.includes(23));
 
 
 // Check
@@ -236,3 +236,43 @@ console.log(friends.includes(23));
 // }  else {
 //     console.log (`The names aren't included.`)
 // }
+
+
+///////////////
+// OBJECTS
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+}
+
+// console.log (jonas.firstName);
+// console.log (jonas['lastName']);
+
+// const nameKey = 'Name';
+
+// console.log (jonas['first' + nameKey]);
+// console.log (jonas['last' + nameKey]);
+
+// const interestedIn = prompt ('What are you interested in? Choose between firstName, lastName, age, job and friends');
+// // console.log (jonas.interestedIn);
+
+
+// if (jonas[interestedIn]) {
+//     console.log (jonas[interestedIn]);
+// } else  {
+//     console.log (`Wrong request! Choose between firstName, lastName, age, job and friends`)
+// }
+
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@joansSchmedtmann';
+// console.log (jonas);
+
+
+    // CHALLENGE 
+//Jonas has 3 friends, and his best friend is Michael
+
+console.log (`${jonas['firstName']} has ${jonas.friends.length} friends, and his best friend is ${jonas.friends[0]}`)
