@@ -164,6 +164,24 @@ if (neighbour.includes('Germany')){
     console.log (`Probably not an African country`)
 }
 
-// neighbour.indexOf('Ghana');
-console.log(neighbour.indexOf('Togo'));
-console.log (neighbour.indexOf[2]);
+neighbour[neighbour.indexOf('Togo')] = 'Republic of Togo';
+console.log (neighbour);
+console.log (neighbour.length);
+
+
+    // CODE CHALLENGE #2
+
+
+// const bill = 100;
+
+
+const calcTip = function (bill) {
+   return (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
+} 
+    
+const bills = [125, 555, 44];
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+const totals = [bills[0] + tips[0],bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, totals);
