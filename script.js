@@ -188,7 +188,7 @@
 //////////////////
 // BASIC ARRAY METHODS
 
-// const friends = ['Michael', 'Steven', 'Peter'];
+const friends = ['Michael', 'Steven', 'Peter'];
 
 ///// Add element 
 
@@ -220,12 +220,19 @@
 // console.log (friends.indexOf('Bob')); // it gives a result of '-1' if the element is not present inside the array.
 
 
-// Includes Method 
+// Includes Method - It tells whether a condition is true or false, hence being used in If/Else statement.
 friends.push(23);
 console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
+console.log(friends.includes('Bob')); 
+// If an element is not present in an array list, the 'includes' function results it as '-1'.
+
 console.log(friends.includes(23));
 
-if (friends.includes('Steven')){
-    console.log (`You have a friend called Peter`)
+
+// Check
+
+if (friends.includes('bob')){
+    console.log (`You have a friend called Steven`)
+}  else {
+    console.log (`The names aren't included.`)
 }
