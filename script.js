@@ -188,7 +188,7 @@
 //////////////////
 // BASIC ARRAY METHODS
 
-const friends = ['Michael', 'Steven', 'Peter'];
+// const friends = ['Michael', 'Steven', 'Peter'];
 
 ///// Add element 
 
@@ -311,3 +311,37 @@ const friends = ['Michael', 'Steven', 'Peter'];
     // // console.log (jonas.age);
 
     // console.log(jonas.getSummary());
+
+
+
+/////////////////////////
+    // LOOP ITERATION
+
+    
+    // for (let rep = 1; rep <= 10; rep++) {
+    //     console.log (`Lifting weigts repitition ${rep} 🏋️‍♀️`);
+    // }
+
+
+    // LOOPING ARRAYS
+    const jonas = [
+        'Jonas',
+        'Schmedtmann',
+        1991,
+       'teacher',
+        ['Michael', 'Peter', 'Steven'],
+        true
+    ]
+
+    const types = []
+    // console.log (jonas.length);
+    for (let i = 0; i < jonas.length; i++) {
+        // Reading from jonas array 
+        console.log (jonas[i], typeof jonas[i]);
+        
+        // Filling types array 
+        types[i] = typeof jonas[i];
+        types.push (typeof jonas[1]);
+    }
+
+    console.log(types);    
