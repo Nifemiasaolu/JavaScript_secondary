@@ -241,13 +241,8 @@ const friends = ['Michael', 'Steven', 'Peter'];
 ///////////////
 // OBJECTS
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    age: 2037 - 1991,
-    job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven']
-}
+// 
+
 
 // console.log (jonas.firstName);
 // console.log (jonas['lastName']);
@@ -275,4 +270,44 @@ const jonas = {
     // CHALLENGE 
 //Jonas has 3 friends, and his best friend is Michael
 
-console.log (`${jonas['firstName']} has ${jonas.friends.length} friends, and his best friend is ${jonas.friends[0]}`)
+// console.log (`${jonas['firstName']} has ${jonas.friends.length} friends, and his best friend is ${jonas.friends[0]}`)
+
+
+
+////////////
+    // OBJECT METHOD 
+
+    const jonas = {
+        firstName: 'Jonas',
+        lastName: 'Schmedtmann',
+        birthYear: 1991,
+        job: 'teacher',
+        friends: ['Michael', 'Peter', 'Steven'],
+        hasDriversLicence: true,
+
+        // calcAge: function (birthYear) {
+        //     return 2037 - birthYear;
+        // }
+        
+        // calcAge: function() {
+        //     // console.log (this);
+        //     return 2037 - jonas.birthYear;
+        // }
+
+        calcAge: function() {
+            this.age = 2037 - jonas.birthYear;
+            return this.age;
+        },
+
+        getSummary: function() {
+            return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicence ? 'a' : 'no'} driver's licence`;
+        }
+    }
+
+    console.log (jonas.calcAge());
+
+    console.log (jonas.age);
+    // console.log (jonas.age);
+    // console.log (jonas.age);
+
+    console.log(jonas.getSummary());
