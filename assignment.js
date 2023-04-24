@@ -185,3 +185,47 @@
 
 // const totals = [bills[0] + tips[0],bills[1] + tips[1], bills[2] + tips[2]];
 // console.log(bills, tips, totals);
+
+
+    // OBJECT ASSIGNMENT
+
+// const myCountry = {
+//     country:  'Nigeria',
+//     capital: 'Abuja',
+//     language: 'English',
+//     population: 200,
+//     neighbours: ['Ghana', 'Togo', 'Cameroun', 'Niger']
+// }
+// // console.log(myCountry);
+// console.log (`${myCountry.country} has ${myCountry.population} million 
+// ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring counries
+// and a capital of ${myCountry.capital}.`);
+
+// myCountry.population += 2;
+// console.log(myCountry.population);
+
+// myCountry.population -= 5;
+// console.log(myCountry.population);
+
+    // OBJECT METHOD ASSIGNMENT 
+
+    const myCountry = {
+        country:  'Nigeria',
+        capital: 'Abuja',
+        language: 'English',
+        population: 200,
+        neighbours: ['Ghana', 'Togo', 'Cameroun', 'Niger'],
+        describe: function(){
+            return `${this.country} has ${this.population} million 
+            ${this.language}-speaking people, 
+            ${this.neighbours.length} neighbouring counries
+            and a capital of ${this.capital}.`
+        },
+        checkIsland: function() {
+            this.isIsland = this.neighbours.length === 0 ? true : false;
+            return this.isIsland;
+        }
+    }
+
+// console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
