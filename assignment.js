@@ -229,3 +229,35 @@
 
 // console.log(myCountry.describe());
 console.log(myCountry.checkIsland());
+
+
+    // CODE CHALLENGE #3
+
+const markBMI = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function() {
+        this.bmiValue = this.mass/ (this.height ** 2)
+        return this.bmiValue;
+    } 
+}
+
+const johnBMI = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function() {
+        this.bmiValue = this.mass/ (this.height ** 2)
+        return this.bmiValue;
+    }
+}
+
+console.log (markBMI.calcBMI(), johnBMI.calcBMI());
+
+
+if (markBMI.calcBMI >= johnBMI.calcBMI) {
+    console.log (`${markBMI.fullName}'s BMI (${markBMI.calcBMI()}) is higher than ${johnBMI.fullName}'s BMI (${johnBMI.calcBMI()})`)
+} else {
+    console.log (`${johnBMI.fullName}'s BMI (${johnBMI.calcBMI()}) is higher than ${markBMI.fullName}'s BMI (${markBMI.calcBMI()})`)
+} 
