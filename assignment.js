@@ -262,3 +262,27 @@
 //     console.log (`${johnBMI.fullName}'s BMI (${johnBMI.calcBMI()}) is higher than ${markBMI.fullName}'s BMI (${markBMI.calcBMI()})`)
 // } 
 
+
+///////////////////
+    // THE FOR LOOP ITERATION ASSIGNMENT
+
+for (let i = 1; i <= 50; i++) {
+    console.log (`Voter number [i] is currently voting.`)
+}
+
+
+///////////////////
+    // LOOPING Array, BREAKING AND CONTINUING ASSIGNMENT
+
+
+const population = [200, 40, 65,72];
+
+const percentageOfWorld1 = function (population){
+        return (population / 7900) * 100; 
+    }
+const percentage2 = [];
+
+for (let i = 0; i < population.length; i++) {
+    percentage2.push(percentageOfWorld1 (population[i]));
+}
+console.log(percentage2);
